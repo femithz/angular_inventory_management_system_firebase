@@ -1,0 +1,42 @@
+
+<div class="main main-raised" style="top: 10rem;">
+  
+    
+    <div id="contentAreas" class="cd-section">
+        <div id="tables">
+          <div class="row">
+            <button  routerLink="/admin/add-order" style="width: 200px;float: right;" class="btn  btn-rose   btn-round btn-block">
+                <i class="material-icons">person</i> Add Order
+              </button>
+            <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+              <h4><small>Orders</small></h4>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr >
+                      <th class="text-center">#</th>
+                      <th>Customer Name</th>
+                      <th>Item Name</th>
+                      <th>Item Price</th>
+                      <th class="text-right">Item Quantity</th>
+                      <th class="text-right">Customer Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let order of orders">
+                      <td class="text-center">1</td>
+                      <td>{{order.customer_name}}</td>
+                      <td>{{order.item_name}}</td>
+                      <td>{{order.item_price}}</td>
+                      <td class="text-right">{{order.item_quantity}}</td>
+                      <td>{{order.customer_phone}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+         </div>
+      </div>
+    </div>
+    
+  </div>

@@ -1,0 +1,42 @@
+
+<div class="main main-raised" style="top: 10rem;">
+  
+    
+    <div id="contentAreas" class="cd-section">
+        <div id="tables">
+          <div class="row">
+            <button  routerLink="/admin/add-item" style="width: 200px;float: right;" class="btn  btn-rose   btn-round btn-block">
+                <i class="material-icons">person</i> Add Item
+              </button>
+            <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+              <h4><small>Items</small></h4>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="text-center">#</th>
+                      <th>Item Name</th>
+                      <th> Item Price</th>
+                      <th>Item Size</th>
+                      <th class="text-right">Item Color</th>
+                      <th class="text-right">Item Weight</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let item of items">
+                      <td class="text-center">1</td>
+                      <td>{{item.item_name}}</td>
+                      <td>{{item.item_price}}</td>
+                      <td>{{item.item_size}}</td>
+                      <td class="text-right">{{item.item_color}}</td>
+                      <td class="text-right">{{item.item_weight}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+         </div>
+      </div>
+    </div>
+    
+  </div>

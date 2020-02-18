@@ -1,0 +1,56 @@
+
+<nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" >
+          Minified Inventory </a>
+      </div>
+    </div>
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="button-container nav-item iframe-extern">
+            <a  routerLink="/auth/register" class="btn  btn-rose   btn-round btn-block">
+              <i class="material-icons">person</i> Register
+            </a>
+          </li> -->
+        </ul>
+  </nav>
+<div class="page-header header-filter" style="background-image: url('../../../assets/img/kit/inventory.jpg'); background-size: cover; background-position: top center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
+            <div class="card card-login card-hidden">
+              <div class="card-header card-header-primary text-center">
+                <h4 class="card-title">Login To Minified Inventory</h4>
+              </div>
+              <div class="card-body ">
+               <br>
+                <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">email</i>
+                      </span>
+                    </div>
+                    <input type="email" [(ngModel)]="email" class="form-control" placeholder="Email...">
+                  </div>
+                </span>
+                <br>
+                <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">lock_outline</i>
+                      </span>
+                    </div>
+                    <input type="password" [(ngModel)]="password" class="form-control" placeholder="Password...">
+                  </div>
+                </span>
+              </div>
+              <div class="card-footer justify-content-center">
+                <a (click)="navigateToDashboard()" class="btn btn-rose btn-link btn-lg">Lets Go</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>

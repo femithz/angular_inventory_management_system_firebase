@@ -1,0 +1,36 @@
+<div class="main main-raised" style="top: 10rem;">
+  
+    
+    <div id="contentAreas" class="cd-section">
+        
+    <br>
+    <div class="form-row" style="margin-left: 5rem;margin-right: 5rem;">
+      <div class="form-group col-md-12">
+        <label for="inputEmail4"> Item Name</label>
+        <input type="text" class="form-control" [(ngModel)]="item_name"  placeholder="Enter Item Name">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputPassword4">Item Price</label>
+        <input type="number" class="form-control" [(ngModel)]="item_price"  placeholder="Item Price">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputEmail4"> Item Size</label>
+        <input type="text" class="form-control" [(ngModel)]="item_size"  placeholder="Medium">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputPassword4">Item Color</label>
+        <input type="text" class="form-control" [(ngModel)]="item_color" placeholder="red">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputPassword4">Item Weight</label>
+        <input type="number" class="form-control" [(ngModel)]="item_weight" placeholder="eg: (20kg)">
+      </div>
+      <div class="form-group ">
+        <button type="submit" style="float: right;" class="btn btn-primary" (click)="addItem()">
+            Create Item        </button>
+      </div>
+    </div>
+   
+
+    </div>
+    </div>

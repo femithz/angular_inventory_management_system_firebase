@@ -1,0 +1,36 @@
+<div class="main main-raised" style="top: 10rem;">
+  
+    
+    <div id="contentAreas" class="cd-section">
+        
+    <br>
+    <div class="form-row" style="margin-left: 5rem;margin-right: 5rem;">
+      <div class="form-group col-md-12">
+        <label for="inputEmail4"> Customer Name</label>
+        <input type="text" class="form-control" [(ngModel)]="customer_name"  placeholder="Enter Customer Name">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputPassword4">Item Name</label>
+        <input type="text" class="form-control" [(ngModel)]="item_name"  placeholder="Item Name">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputEmail4"> Item Price</label>
+        <input type="text" class="form-control" [(ngModel)]="item_price"  placeholder="Medium">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputPassword4">Item Quantity</label>
+        <input type="text" class="form-control" [(ngModel)]="item_quantity" placeholder="Enter Quantity">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputPassword4">Customer Phone Number</label>
+        <input type="number" class="form-control" [(ngModel)]="customer_phone" placeholder="+234">
+      </div>
+      <div class="form-group ">
+        <button type="submit" style="float: right;" class="btn btn-primary" (click)="addOrder()">
+            Create Item        </button>
+      </div>
+    </div>
+   
+
+    </div>
+    </div>

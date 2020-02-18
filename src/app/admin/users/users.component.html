@@ -1,0 +1,40 @@
+
+<div class="main main-raised" style="top: 10rem;">
+  
+    
+    <div id="contentAreas" class="cd-section">
+        <div id="tables">
+          <div class="row">
+            <button  routerLink="/admin/add" style="width: 200px;float: right;" class="btn  btn-rose   btn-round btn-block">
+                <i class="material-icons">person</i> Add User
+              </button>
+            <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+              <h4><small>Users(Customers)</small></h4>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="text-center">#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Email</th>
+                      <th class="text-right">Phone Number</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let user of users">
+                      <td class="text-center">1</td>
+                      <td>{{user.name}}</td>
+                      <td>{{user.last_name}}</td>
+                      <td>{{user.email}}</td>
+                      <td class="text-right">{{user.phone}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+         </div>
+      </div>
+    </div>
+    
+  </div>

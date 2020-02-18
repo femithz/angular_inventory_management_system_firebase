@@ -1,0 +1,33 @@
+<div class="main main-raised" style="top: 10rem;">
+  
+    
+    <div id="contentAreas" class="cd-section">
+        
+    <br>
+    <div class="form-row" style="margin-left: 5rem;margin-right: 5rem;">
+      <div class="form-group col-md-12">
+        <label for="inputEmail4"> First Name</label>
+        <input type="text" class="form-control" [(ngModel)]="name"  placeholder="Enter Name">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputPassword4">Last Name</label>
+        <input type="text" class="form-control" [(ngModel)]="last_name"  placeholder="Password">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputEmail4"> Email</label>
+        <input type="email" class="form-control" [(ngModel)]="email"  placeholder="joe@gmail.com">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputPassword4">Phone Number</label>
+        <input type="number" class="form-control" [(ngModel)]="phone" placeholder="+234">
+      </div>
+      <div class="form-group ">
+        <button type="submit" style="float: right;" class="btn btn-primary" (click)="addUser()">
+            Create User
+        </button>
+      </div>
+    </div>
+   
+
+    </div>
+    </div>
